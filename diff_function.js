@@ -1,11 +1,12 @@
-function srtSizedLength(num) {
+function srtSizedLength(num, bol) {
   const len = num.length;
 
-  if (len % 2 === 0) {
+  if (bol === true) {
     const out = len * 2;
     console.log(out);
   } else {
     console.log(len);
   }
 }
-srtSizedLength("dhak");
+srtSizedLength("dhak", true);
+srtSizedLength("dhak", false);
